@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px 0;
+}
+img{
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+button{
+    margin: 20px 0;
+}
+button a{
+   color: white;
+}
+
+@media (max-width: 600px) { 
+    .landing-image {
+        background: url('../../../assets/landing2.jpg');
+    }
+ }
+ .landing-image {
+    background: url('../../../assets/landing.jpg') no-repeat;
+}
