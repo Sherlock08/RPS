@@ -1,30 +1,30 @@
 <div class="container">
   <h1>Rock Paper Scissors</h1>
   <div class="start-button-section">
-    <button class="btn btn-primary">Let's Start!!</button>
+   <h2>{{ resultLabel }}</h2>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-6">
       <h3>My Score</h3>
       <h5>{{ myScore }}</h5>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-6">
       <h3>Computer Score</h3>
       <h5>{{ computerScore }}</h5>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
-      <img class="player-image" src="../../../assets/rock.png" alt="">
+    <div class="col-md-6 col-sm-6">
+      <img class="player-image" src="../../../assets/{{playerChoiceImage}}.png" alt="">
     </div>
-    <div class="col-md-6">
-      <img src="../../../assets/rock.png" alt="">
+    <div class="col-md-6 col-sm-6">
+      <img class="computer-image" src="../../../assets/{{computerChoiceImage}}.png" alt="">
     </div>
   </div>
   <div class="button-section">
-    <button class="btn btn-success">Rock</button>
-    <button class="btn btn-success">Paper</button>
-    <button class="btn btn-success">Scissors</button>
+    <button class="btn btn-success" (click)="buttonClicked('rock')">Rock</button>
+    <button class="btn btn-success" (click)="buttonClicked('paper')">Paper</button>
+    <button class="btn btn-success" (click)="buttonClicked('scissors')">Scissors</button>
   </div>
 
 
